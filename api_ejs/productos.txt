@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "El principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "imagen": "https://imagessl4.casadellibro.com/a/l/t5/94/9788478887194.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Harry Potter y la piedra filosofal",
+    "autor": "J. K. Rowling",
+    "imagen": "https://books.google.com.ar/books/content?id=2zgRDXFWkm8C&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71HNrAEGIWGeQpL6eTwm-sajArgdXCbdrimZCq_JjReNtrtDP-94J4yrF7HfYrb_gFtcPdiTs1TZJ2OVWhOoh8XUEtLU7nuSCmwlp1mKSqHW4egCneoz71H5L_PqSgK8hO0iHcA"
+  },
+  {
+    "id": 3,
+    "titulo": "La Torre Oscura",
+    "autor": "Stephen King",
+    "imagen": "https://images-na.ssl-images-amazon.com/images/I/812SHnSZsYL.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "El señor de los anillos",
+    "autor": "J. R. R. Tolkien",
+    "imagen": "https://images-na.ssl-images-amazon.com/images/I/81U5RVCuTHL.jpg"
+  }
+]

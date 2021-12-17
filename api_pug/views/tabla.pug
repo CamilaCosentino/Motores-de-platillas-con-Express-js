@@ -1,0 +1,33 @@
+html 
+    head 
+        title= "Vista de registros"
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+    body 
+        header(style="background:salmon")
+            h1(style="text-align: center; padding: 20px 0;color:#fff; font-size: 2em")= "Vista de los productos registrados "
+        div(class="tabla" style="margin: 40px 50px;")
+                table(class="table table-bordered")
+     
+                    thead(style="background: rgb(14, 14, 47)" )
+                        tr
+                            th(scope="col" style="color:#fff; text-align:center")=id 
+                            th(scope="col" style="color:#fff; text-align:center")=name 
+                            th(scope="col" style="color:#fff;  text-align:center")=price 
+                            th(scope="col" style="color:#fff;  text-align:center")=image 
+                
+                    tbody 
+                       each producto in data 
+                             tr(style="background:lightblue")
+                            
+                                td(style="text-align:center; padding:20px")=producto.id 
+                                td(style="text-align:center; padding:20px")=producto.nombre 
+                            
+                                td(style="text-align:center; padding:20px")= producto.precio 
+                            
+                                td(style="text-align:center")
+                                    img(src= producto.imagen  style="width:40px" alt="foto")
+                    a(href="http://localhost:8080/productos" style="margin:0 0 30px 0" class="btn btn-success") Cargar un nuevo registro
+
+         
+        footer(style="background:salmon; padding:30px 0;")  
+               p(style="color:white; text-align:center;") Primer trabajo con Pug y express         

@@ -1,0 +1,32 @@
+html 
+    head 
+        title= "Formulario de productos con Pug y Express"
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        script(src="../index.js")
+    body 
+        header(style="background:deeppink")
+            
+           
+               h1(style="text-align: center; padding: 20px 0;color:#fff; font-size: 2em")= mensaje 
+            
+        div(style="margin: 40px 50px; background:lightblue; padding:20px 0; border: 4px solid darkblue; border-radius:12px")
+            h2(style ="margin:10px 50px") Registra un nuevo producto
+            form(action="/productos" method="POST" style ="margin:10px 50px") 
+                div(class="form-group")
+                    label(for="nombreproduct" style ="color:#000")="Nombre del producto" 
+                    input(type="text" class="form-control nombre" name="nombre" placeholder="Ej: Heladera",id="exampleInputEmail1" aria-describedby="emailHelp")
+
+                div(class="form-group")
+                    label(for="nombreproduct" style ="color:#000")="Precio" 
+                    
+                    input(type="text",class="form-control precio" name="precio" placeholder="Ej: $500",id="exampleInputEmail1" aria-describedby="emailHelp")
+
+                div(class="form-group")
+                    label(for="nombreproduct" style ="color:#000")="Url de la foto" 
+                    input(type="text",class="form-control img" name="imagen" placeholder="Ej: https://..." id="exampleInputEmail1" aria-describedby="emailHelp")
+                button(type="submit"  class="agregar btn btn-success" ) Agregar
+                a(href="http://localhost:8080/vista" class="agregar btn btn-info" style="float:right") Lista de registros
+        footer(style="background:deeppink; padding:30px 0;")  
+               p(style="color:white; text-align:center;") Primer trabajo con Pug y express         
+
+    
